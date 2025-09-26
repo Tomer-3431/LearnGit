@@ -155,7 +155,7 @@ public class Robot1Strip extends LedStrip {
             setBlink(Color.kBlue);
         }
 
-        if (Math.round(Math.random()*100) == 100) {
+        if (Math.round(Math.random()*100) == 20) {
             setSolidGay();
         }
     }
