@@ -151,20 +151,11 @@ public class Robot1Strip extends LedStrip {
             coralStationTimer.reset();
         }
 
-        if (DriverStation.getMatchTime() <= 30 && DriverStation.getMatchTime() > 28 && !DriverStation.isAutonomous()) {
-            setBlink(Color.kBlue);
-        }
-
-        if (Math.round(Math.random()*20) == 20) {
-            setSolidGay();
-        }
     }
 
     Color[] setColorSides(Color left, Color right) {
-        Color[] colorArr = new Color[LedConstants.LENGTH];
-        int i;
+        Color[] colorArr = new ColoConstants.LENGTH];
         for (i = 0; i < 6; i++) {
-            colorArr[i] = right;
         }
         for (; i < LedConstants.LENGTH; i++) {
             colorArr[i] = left;
