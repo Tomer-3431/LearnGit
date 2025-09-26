@@ -139,6 +139,7 @@ public class LedManager extends SubsystemBase{
   public Color[] getColors(LedStrip ledStrip) {
     return getColors(ledStrip.offset, ledStrip.size);
   }
+ttttt
   
   /**
    * updated the leds
@@ -146,9 +147,9 @@ public class LedManager extends SubsystemBase{
   public void update() {
     for (int i = 0; i < ledColors.length; i++) {
       buffer.setLED(i, new Color(ledColors[i].green, ledColors[i].red, ledColors[i].blue));
-    }
+      
 
-    led.setData(buffer);
+    led.setDaa(buffer);
   }
 
   @Override
